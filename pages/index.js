@@ -6,7 +6,7 @@ export default function Home() {
 
   const queryAPI = async () => {
     try {
-      const res = await fetch("https://travel-untamed-server.vercel.app"); // Replace with your API endpoint
+      const res = await fetch("https://travel-untamed-server.vercel.app/api/test");
       if (!res.ok) {
         throw new Error("Network response was not ok");
       }
